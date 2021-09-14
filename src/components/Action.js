@@ -7,7 +7,6 @@ export default class Action extends React.Component {
     render() {
         let action = _.get(this.props, 'action', null);
         let action_style = _.get(action, 'style', null) || 'link';
-        let action_icon = _.get(action, 'icon', null) || 'dribbble';
         return (
             <Link to={withPrefix(_.get(action, 'url', null))}
               {...(_.get(action, 'new_window', null) ? ({target: '_blank'}) : null)}
