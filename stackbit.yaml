@@ -720,10 +720,6 @@ models:
     labelField: label
     fields:
       - type: string
-        name: label
-        label: Label
-        required: true
-      - type: string
         name: url
         label: URL
         required: true
