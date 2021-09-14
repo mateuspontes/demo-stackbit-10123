@@ -17,10 +17,9 @@ export default class Action extends React.Component {
               {(action_style === 'icon') ? (<React.Fragment>
                 <Icon {...this.props} icon={action_icon} />
                 <span className="screen-reader-text">{_.get(action, 'label', null)}</span>
-              </React.Fragment>) : (
-                <>_.get(action, 'prefix', null)
-                    _.get(action, 'label', null)
-                </>
+              </React.Fragment>) : 
+                {_.get(action, 'prefix', null)}
+                {_.get(action, 'label', null)}
                 )
               }
             </Link>
