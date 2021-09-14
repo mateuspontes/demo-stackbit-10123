@@ -19,7 +19,6 @@ export default class Action extends React.Component {
                 <span className="screen-reader-text">{_.get(action, 'label', null)}</span>
               </React.Fragment>) : (
                 <> _.get(action, 'prefix', null)
-                   _.get(action, 'label', null)
                 </>
                 )
               }
